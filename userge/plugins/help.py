@@ -52,28 +52,24 @@ _CATEGORY = {
     "xtra": "➕",
     "temp": "♻️",
     "plugins": "💎",
-    "bot": "💠",
+    "bot": "🤖",
     "custom": "🔧",
 }
 # Database
 SAVED_SETTINGS = get_collection("CONFIGS")
 REPO_X = InlineQueryResultArticle(
-    title="Repo",
+    title="Personal bot",
     input_message_content=InputTextMessageContent("**Here's how to setup USERGE-X** "),
-    url="https://github.com/code-rgb/USERGE-X",
-    description="Setup Your Own",
-    thumb_url="https://i.imgur.com/1xsOo9o.png",
+    url="https://t.me/aj_pOpzZ",
+    description="Sorry U have no access to use ME!",
+    thumb_url="https://telegra.ph/file/22d413c12620dcf736fb3.jpg",
     reply_markup=InlineKeyboardMarkup(
         [
             [
                 InlineKeyboardButton(
-                    "🔥 USERGE-X Repo", url="https://github.com/code-rgb/USERGE-X"
-                ),
-                InlineKeyboardButton(
-                    "🚀 Deploy USERGE-X",
+                    "Owner 😐",
                     url=(
-                        "https://heroku.com/deploy?template="
-                        "https://github.com/code-rgb/USERGE-X/tree/alpha"
+                        "https://t.me/aj_pOpzZ"
                     ),
                 ),
             ]
