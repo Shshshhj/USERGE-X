@@ -72,7 +72,8 @@ async def progress(
                     for i in range(20 - floor(percentage / 5))
                 )
             ),
-            humanbytes(current), round(percentage, 2), 
+            round(percentage, 2),
+            humanbytes(current),
             humanbytes(total),
             humanbytes(speed),
             time_to_completion if time_to_completion else "0 s",
