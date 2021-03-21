@@ -58,9 +58,9 @@ _CATEGORY = {
 # Database
 SAVED_SETTINGS = get_collection("CONFIGS")
 REPO_X = InlineQueryResultArticle(
-    title="Personal bot",
+    title="𝚙𝙾𝚙ʑ𝓩​🍁™",
     input_message_content=InputTextMessageContent("**Here's how to setup USERGE-X** "),
-    url="https://t.me/aj_pOpzZ",
+    # url="https://t.me/aj_pOpzZ",
     description="Sorry U have no access to use ME!",
     thumb_url="https://telegra.ph/file/22d413c12620dcf736fb3.jpg",
     reply_markup=InlineKeyboardMarkup(
@@ -85,7 +85,7 @@ async def _init() -> None:
 
 
 @userge.on_cmd(
-    "help", about={"header": "Guide to use USERGE commands"}, allow_channels=False
+    "help", about={"header": "Guide to use USERGE commands"}, allow_channels=True
 )
 async def helpme(message: Message) -> None:
     plugins = userge.manager.enabled_plugins
@@ -165,7 +165,7 @@ if userge.has_bot:
             else:
                 user_dict = await userge.bot.get_user_dict(Config.OWNER_ID[0])
                 await c_q.answer(
-                    f"Only {user_dict['flname']} Can Access this...! Build Your USERGE-X",
+                    f"Only {user_dict['flname']} Can Access this...! 💥",
                     show_alert=True,
                 )
 
@@ -210,7 +210,7 @@ if userge.has_bot:
             await callback_query.answer("you are in main menu", show_alert=True)
             return
         if len(pos_list) == 2:
-            text = " 𝐔𝐒𝐄𝐑𝐆𝐄-𝐗  𝗠𝗔𝗜𝗡 𝗠𝗘𝗡𝗨"
+            text = " 𝗠𝗔𝗜𝗡 𝗠𝗘𝗡𝗨"
             buttons = main_menu_buttons()
         elif len(pos_list) == 3:
             text, buttons = category_data(cur_pos)
@@ -262,7 +262,7 @@ if userge.has_bot:
     @check_owner
     async def callback_mm(callback_query: CallbackQuery):
         await callback_query.edit_message_text(
-            " 𝐔𝐒𝐄𝐑𝐆𝐄-𝐗  𝗠𝗔𝗜𝗡 𝗠𝗘𝗡𝗨 ",
+            " 𝗠𝗔𝗜𝗡 𝗠𝗘𝗡𝗨 ",
             reply_markup=InlineKeyboardMarkup(main_menu_buttons()),
         )
 
@@ -325,11 +325,11 @@ if userge.has_bot:
             pairs = pairs[current_page * rows : (current_page + 1) * rows] + [
                 [
                     InlineKeyboardButton(
-                        "⏪ Previous",
+                        "Previous",
                         callback_data=f"({cur_pos})prev({current_page})".encode(),
                     ),
                     InlineKeyboardButton(
-                        "⏩ Next",
+                        "Next",
                         callback_data=f"({cur_pos})next({current_page})".encode(),
                     ),
                 ],
@@ -498,14 +498,14 @@ if userge.has_bot:
                 owner = [
                     [
                         InlineKeyboardButton(
-                            text="Contact", url="https://t.me/deleteduser420"
+                            text="Contact", url="https://t.me/aj_pOpzZ"
                         )
                     ]
                 ]
                 results.append(
                     InlineQueryResultPhoto(
                         photo_url="https://coverfiles.alphacoders.com/123/123388.png",
-                        caption="Hey I solved **𝚂𝚢𝚗𝚝𝚊𝚡's ░ Σrr♢r**",
+                        caption="Hey I solved **Σrr♢r**",
                         reply_markup=InlineKeyboardMarkup(owner),
                     )
                 )
@@ -867,7 +867,7 @@ if userge.has_bot:
                             InlineQueryResultArticle(
                                 title="Spoiler",
                                 input_message_content=InputTextMessageContent(
-                                    "<b>Click To View The Spoiler !</b>"
+                                    "<b>Spoiler is ready!!</b>"
                                 ),
                                 description="Click To Send",
                                 thumb_url="https://telegra.ph/file/ee3a6439494463acd1a3a.jpg",
@@ -1060,11 +1060,11 @@ if userge.has_bot:
                     thumb_img = "https://i.imgur.com/c5pZebC.png"
                 else:
                     c_data = f"troll_{key_}"
-                    i_m_content = f"😈 Only <b>{r_name}</b> can't view this message. UwU"
+                    i_m_content = f"🤭 Only <b>{r_name}</b> can't view this message. UwU"
                     i_l_des = f"Message Hidden from {r_name}"
                     title = "😈 Troll"
                     thumb_img = "https://i.imgur.com/0vg5B0A.png"
-                buttons = [[InlineKeyboardButton("🔐  SHOW", callback_data=c_data)]]
+                buttons = [[InlineKeyboardButton("🔐 SHOW", callback_data=c_data)]]
                 results.append(
                     InlineQueryResultArticle(
                         title=title,
@@ -1137,8 +1137,8 @@ if userge.has_bot:
             MAIN_MENU = InlineQueryResultArticle(
                 title="Main Menu",
                 input_message_content=InputTextMessageContent(" 𝐔𝐒𝐄𝐑𝐆𝐄-𝐗  𝗠𝗔𝗜𝗡 𝗠𝗘𝗡𝗨 "),
-                url="https://github.com/code-rgb/USERGE-X",
-                description="Userge-X Main Menu",
+                url="t.me/aj_pOpzZ",
+                description="Main Menu",
                 thumb_url="https://i.imgur.com/1xsOo9o.png",
                 reply_markup=InlineKeyboardMarkup(main_menu_buttons()),
             )
