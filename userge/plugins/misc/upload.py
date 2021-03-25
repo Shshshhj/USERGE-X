@@ -172,7 +172,7 @@ async def upload(
 ):
     if "wt" in message.flags:
         with_thumb = False
-    if path.name.lower().endswith((".mkv", ".mp4", ".webm")) and (
+    if path.name.lower().endswith((".mkv", ".mp4", ".webm", "avi")) and (
         "d" not in message.flags
     ):
         return await vid_upload(
