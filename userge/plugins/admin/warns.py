@@ -55,10 +55,10 @@ banned_text = "Warnings has been exceeded! {} has been {}!"
         "description": "Use this command to warn the user! you can mention or reply to the offended user and add reason if needed",
         "usage": "{tr}warn [username | userid] or [reply to user] :reason (optional)",
     },
-    allow_private=False,
+    allow_private=True,
     allow_bots=False,
     allow_channels=False,
-    check_restrict_perm=True,
+    check_restrict_perm=False,
 )
 async def warn_func(message: Message):
     """warn users"""
@@ -236,7 +236,7 @@ async def update_warnmode(message: Message, warn_mode: str):
     allow_private=False,
     allow_bots=False,
     allow_channels=False,
-    check_restrict_perm=True,
+    check_restrict_perm=False,
 )
 async def maxwarns(message: Message):
     """change warn limit"""
@@ -325,7 +325,7 @@ async def ban_function(message: Message, warned_user: User, warn_mode: str):
     allow_private=False,
     allow_bots=False,
     allow_channels=False,
-    check_restrict_perm=True,
+    check_restrict_perm=False,
 )
 async def resetwarns(message: Message):
     """reset all warns of a user"""
@@ -361,7 +361,7 @@ async def resetwarns(message: Message):
     allow_private=False,
     allow_bots=False,
     allow_channels=False,
-    check_restrict_perm=True,
+    check_restrict_perm=False,
 )
 async def totalwarns(message: Message):
     """check total warns of a user"""
