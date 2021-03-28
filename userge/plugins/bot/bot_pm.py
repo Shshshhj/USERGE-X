@@ -196,7 +196,6 @@ My Owner    : {owner_.flname}</b>
             btns = [
                 [
                     InlineKeyboardButton("👤  CONTACT", url=contact_url),
-                    InlineKeyboardButton("➕ PRESS TO ADD", url=add_bot),
                 ]
             ]
         try:
